@@ -1,0 +1,13 @@
+using UnityEngine;
+
+public class PlayerCollision : MonoBehaviour
+{
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Debug.Log("Collision with obstacle!");
+            // Aquí puedes agregar lógica para manejar la colisión
+        }
+    }
+}
